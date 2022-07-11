@@ -321,7 +321,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "help":
             buttons = [[
                 InlineKeyboardButton('Channel', url='t.me/free_music123'),
-                InlineKeyboardButton('Group', url="t.me/all_super_movies")
+                InlineKeyboardButton('Updates', url="t.me/check_this_channel")
                 ],[
                 InlineKeyboardButton('💫Developer💫', url='t.me/geronimo1234')
                 ]]
@@ -331,7 +331,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             buttons = [
                 [
                     InlineKeyboardButton('Developer', url='t.me/geronimo1234'),
-                    InlineKeyboardButton('Group', url="t.me/all_super_movies")
+                    InlineKeyboardButton('Updates', url="t.me/check_this_channel")
                 ]
                 ]
             await query.message.edit(text=f"{ABOUT}".format(TUTORIAL), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
@@ -354,7 +354,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('💫 DEVELOPER 💫', url="t.me/geronimo1234")
+                        InlineKeyboardButton('💫 Updates 💫', url="t.me/check_this_channel")
                     ]
                     ]
                 
@@ -385,7 +385,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{title}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🖥️ Developer 🖥️', url="t.me/geronimo1234")
+                        InlineKeyboardButton('🖥️ Updates 🖥️', url="t.me/check_this_channel")
                     ]
                     ]
                 
