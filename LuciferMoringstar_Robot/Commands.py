@@ -106,7 +106,7 @@ async def start(bot, message):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🖥️ Developer 🖥️', url="https://t.me/Geronimo1234")
+                        InlineKeyboardButton('🖥️ Updates 🖥️', url="https://t.me/check_this_channel")
                     ],
                     [
                         InlineKeyboardButton('🔍 Search Movies Here 🔎', switch_inline_query_current_chat='')
@@ -370,7 +370,7 @@ async def bot_info(bot, message):
         [
             InlineKeyboardButton
                 (
-                     'Official Group', url="https://t.me/all_super_movies"
+                     'Official Channel', url="https://t.me/free_movie_channel"
                 )
         ]
     ]
@@ -389,14 +389,14 @@ async def help(bot, message):
         [
             InlineKeyboardButton
                 (
-                     'Official Group', url="https://t.me/all_super_movies"
+                     'Official Channel', url="https://t.me/free_movie_channel"
                 )
         ]
     ]
     await bot.send_photo(
         chat_id=message.from_user.id,
         photo="https://telegra.ph/file/d93aad61f215cf725ff87.jpg",
-        caption=f"Add me to your Group as admin\nGive me full permission\nI will give movies there\n\n<b><u>Basic Commads</u></b>\n➥ /start : check if am alive or dead\n➥ /about : About Me\n➥ /stats user Status",
+        caption=f"Add me to your Group as admin\nGive me full permission\nI will give movies there\n\n<b><u>Basic Commads</u></b>\n➥ /start : To Check if I am online\n➥ /about : To Know About Me\n➥ /stats To know user Status",
         parse_mode="html",
         reply_to_message_id=message.message_id,
         reply_markup=InlineKeyboardMarkup(buttons))
